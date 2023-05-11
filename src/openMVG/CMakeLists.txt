@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.26.3)
+project(openMVG)
 add_subdirectory(cameras)
 add_subdirectory(clustering)
 add_subdirectory(exif)

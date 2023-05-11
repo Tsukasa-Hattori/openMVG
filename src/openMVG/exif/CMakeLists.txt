@@ -8,6 +8,6 @@ set_property(TARGET openMVG_exif PROPERTY FOLDER OpenMVG/OpenMVG)
 install(TARGETS openMVG_exif DESTINATION ${CMAKE_INSTALL_LIBDIR} EXPORT openMVG-targets)
 
 
-UNIT_TEST(openMVG exif_IO "openMVG_testing;${STLPLUS_LIBRARY};openMVG_exif")
+add_test(openMVG exif_IO "openMVG_testing;${STLPLUS_LIBRARY};openMVG_exif")
 
 add_subdirectory(sensor_width_database)
